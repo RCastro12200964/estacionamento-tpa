@@ -1,0 +1,124 @@
+/* Reset básico para garantir que todos os navegadores tenham uma aparência consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+form {
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: calc(100% - 20px); /* Ajusta a largura considerando o padding */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #35424a; /* Cor da borda ao focar */
+}
+
+button {
+    background-color: #35424a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #4e636f;
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: white;
+    transition: box-shadow 0.3s;
+}
+
+li:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+a {
+    color: #35424a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre os itens */
+}
+
+.portfolio-item {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    transition: box-shadow 0.3s;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+.portfolio-item a {
+    color: #35424a; /* Cor do link */
+    text-decoration: none;
+}
+
+.portfolio-item a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .portfolio-container {
+        flex-direction: column; /* Mantém a coluna em telas menores */
+    }
+}
